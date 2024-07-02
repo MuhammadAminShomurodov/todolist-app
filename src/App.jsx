@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import axios from "axios";
 import {
   Table,
@@ -45,7 +45,7 @@ class App extends Component {
       );
       const users = response.data || [];
       this.setState({ users });
-      this.updateLocalStorage(users); // Lokal saqlashni yangilash
+      this.updateLocalStorage(users);
     } catch (error) {
       console.error("Error fetching users from API:", error);
       toast.error("Failed to fetch users from API.");
@@ -76,7 +76,7 @@ class App extends Component {
           showModal: false,
           formData: { id: "", name: "", username: "", email: "" },
         });
-        this.updateLocalStorage(updatedUsers); // Lokal saqlashni yangilash
+        this.updateLocalStorage(updatedUsers);
         toast.success("User updated successfully!");
       } else {
         const newUser = {
@@ -94,7 +94,7 @@ class App extends Component {
           showModal: false,
           formData: { id: "", name: "", username: "", email: "" },
         });
-        this.updateLocalStorage(updatedUsers); // Lokal saqlashni yangilash
+        this.updateLocalStorage(updatedUsers);
         toast.success("User added successfully!");
       }
     } catch (error) {
@@ -123,7 +123,7 @@ class App extends Component {
       const { users } = this.state;
       const updatedUsers = users.filter((user) => user.id !== id);
       this.setState({ users: updatedUsers });
-      this.updateLocalStorage(updatedUsers); // Lokal saqlashni yangilash
+      this.updateLocalStorage(updatedUsers); 
       toast.error("User deleted successfully!");
     } catch (error) {
       console.error("Error deleting user:", error);
