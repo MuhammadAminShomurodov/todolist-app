@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://cdn.wallpapersafari.com/10/67/aXhmCM.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+.input-group input {
+  background-color: #00000075 !important;
+  color: #fff !important;
+  width: 850px !important;
+}
+.input-group input::placeholder {
+  color: #ddd;
+}
+
+.all-groups select {
+  background-color: #000000c1 !important;
+  color: #fff !important;
+  width: 150px;
+}
+
+thead th {
+  background-color: #ffffff9a !important;
+  color: #000000 !important;
+}
+tbody td {
+  background-color: #00000075 !important;
+  color: #fff !important;
+}
+
+.add {
+  background-color: rgba(105, 105, 255, 0.33);
+}
+
+.btns-search {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.edit-btn {
+  background-color: #ffbf0088;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #bb2d3b91;
+}
